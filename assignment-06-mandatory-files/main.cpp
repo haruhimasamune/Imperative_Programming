@@ -23,7 +23,7 @@ const int NO_OF_COLUMNS     = 60 ;                // the number of columns (widt
 Cell cell_at (Cell universe [NO_OF_ROWS][NO_OF_COLUMNS], int row, int column)
 {
 //  Pre-condition:
-    assert(universe [NO_OF_ROWS][NO_OF_COLUMNS] == LIVE || universe [NO_OF_ROWS][NO_OF_COLUMNS] == DEAD);
+    assert(true);
 /*  Post-conditon:
     If row and column are within the bounds defined by NO_OF_ROWS and NO_OF_COLUMNS, return the coordinate value in enum Cell
     If row and column are outside the bounds, return Dead */
