@@ -1,0 +1,3 @@
+D:/haruhimasamune/OneDrive/Desktop/Radboud/2023_S2/2324_Imperative_Programming_(KW1V)/git_WIN/Imperative_Programming/build/CMakeFiles/assignment-06-bonus.dir
+D:/haruhimasamune/OneDrive/Desktop/Radboud/2023_S2/2324_Imperative_Programming_(KW1V)/git_WIN/Imperative_Programming/build/CMakeFiles/edit_cache.dir
+D:/haruhimasamune/OneDrive/Desktop/Radboud/2023_S2/2324_Imperative_Programming_(KW1V)/git_WIN/Imperative_Programming/build/CMakeFiles/rebuild_cache.dir
