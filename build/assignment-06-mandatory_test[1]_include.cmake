@@ -1,5 +1,0 @@
-if(EXISTS "D:/haruhimasamune/OneDrive/Desktop/Radboud/2023_S2/2324_Imperative_Programming_(KW1V)/git_repository_WIN/Imperative_Programming/build/assignment-06-mandatory_test[1]_tests.cmake")
-  include("D:/haruhimasamune/OneDrive/Desktop/Radboud/2023_S2/2324_Imperative_Programming_(KW1V)/git_repository_WIN/Imperative_Programming/build/assignment-06-mandatory_test[1]_tests.cmake")
-else()
-  add_test(assignment-06-mandatory_test_NOT_BUILT assignment-06-mandatory_test_NOT_BUILT)
-endif()
