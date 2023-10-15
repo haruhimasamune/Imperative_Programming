@@ -1,3 +1,0 @@
-D:\ImperativeProgramming\cmake-3.27.4-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\assignment-06-bonus.dir/objects.a
-C:\mingw64\bin\ar.exe qc CMakeFiles\assignment-06-bonus.dir/objects.a @CMakeFiles\assignment-06-bonus.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\assignment-06-bonus.dir/objects.a -Wl,--no-whole-archive -o main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\assignment-06-bonus.dir\linkLibs.rsp
