@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/googletest-build",
+		"source" : "D:/haruhimasamune/OneDrive/Desktop/git_WIN/Imperative_Programming/build/_deps/googletest-src"
+	}
+}

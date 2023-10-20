@@ -27,8 +27,24 @@ int enter_command (string filename, string content [MAX_NO_OF_WORDS])
     have been read from that file (at most MAX_NO_OF_WORDS) and are stored in that order in `content`.
     if result is zero, then either the text file was empty or has not been opened.
 */
-    // implement this function
-    return 0;
+    ifstream file (filename);  // Open File  
+    if (file.fail())
+    {
+        cerr << "Error: File "<< filename << " could not be opened." << endl;
+        return 0;
+    }    
+    else
+    {
+        int no_of_words = 0; // array index of content
+        string next_word;
+        while (read_word (file, next_word) == true && no_of_words < MAX_NO_OF_WORDS) // When there are still words left in file and index doesn't reach the maximum
+        {
+            content[no_of_words] = next_word;
+            no_of_words++;
+        }
+    file.close();
+    return no_of_words++;
+    }
 }
 
 int count_command (string content [MAX_NO_OF_WORDS], int no_of_words, string terms [MAX_NO_OF_TERMS], int no_of_terms)
@@ -39,6 +55,53 @@ int count_command (string content [MAX_NO_OF_WORDS], int no_of_words, string ter
     result is the number of occurrences of the word sequence `terms` (which has `no_of_terms` elements) in `content` (which has `no_of_words` elements)
     (the result is obviously zero in case `no_of_words` < `no_of_terms`)
 */
+    int count = 0;
+    int word_in_term = 0;
+    for (int i = 0; i < no_of_words; i++)
+    {
+        if (content[i] == terms[word_in_term]) // index where the word same as the first word in term
+        {
+            int j = i + 1;
+            int k = i + no_of_terms -1;
+            word_in_term++;
+            while (j < k && content[j] == terms[word_in_term])
+            {
+                j++;
+                word_in_term++;
+            }
+            if (j == k) // we find a term in ieration i
+            {
+            count++;
+            }
+            word_in_term = 0;
+        }
+    }
+    return count;
+}
+
+int where_command (string content [MAX_NO_OF_WORDS], int no_of_words, string terms [MAX_NO_OF_TERMS], int no_of_terms)
+{// precondition:
+    assert(no_of_terms >= 0 && no_of_terms <= MAX_NO_OF_TERMS);
+    assert(no_of_words >= 0 && no_of_words <= MAX_NO_OF_WORDS);
+/*  postcondition:
+    result is the number of occurrences of the word sequence `terms` (which has `no_of_terms` elements) in `content` (which has `no_of_words` elements)
+    (the result is obviously zero in case `no_of_words` < `no_of_terms`)
+*/
+    
+    // implement this function
+    return 0;
+}
+
+int context_command (int m, string content [MAX_NO_OF_WORDS], int no_of_words, string terms [MAX_NO_OF_TERMS], int no_of_terms)
+{// precondition:
+    m >= 1;
+    assert(no_of_terms >= 0 && no_of_terms <= MAX_NO_OF_TERMS);
+    assert(no_of_words >= 0 && no_of_words <= MAX_NO_OF_WORDS);
+/*  postcondition:
+    result is the number of occurrences of the word sequence `terms` (which has `no_of_terms` elements) in `content` (which has `no_of_words` elements)
+    (the result is obviously zero in case `no_of_words` < `no_of_terms`)
+*/
+    
     // implement this function
     return 0;
 }
