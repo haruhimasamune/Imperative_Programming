@@ -71,8 +71,13 @@ Length operator+ (const Length& a, const Length& b)
 /*  Postcondition:
     Result is the sum of a and b.
 */
-    // implement this function
-    return {};
+    Length sum;
+    int totalseconds = a.seconds + b.seconds;
+    int actualseconds = totalseconds % 60;
+    int bonusminutes = totalseconds / 60;
+    sum.minutes = a.minutes + b.minutes + bonusminutes;
+    sum.seconds = actualseconds;
+    return {sum};
 }
 
 void show_track (Track track, TrackDisplay lt, ostream& os)

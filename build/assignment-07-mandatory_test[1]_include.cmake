@@ -1,5 +1,0 @@
-if(EXISTS "D:/haruhimasamune/OneDrive/Desktop/git_WIN/Imperative_Programming/build/assignment-07-mandatory_test[1]_tests.cmake")
-  include("D:/haruhimasamune/OneDrive/Desktop/git_WIN/Imperative_Programming/build/assignment-07-mandatory_test[1]_tests.cmake")
-else()
-  add_test(assignment-07-mandatory_test_NOT_BUILT assignment-07-mandatory_test_NOT_BUILT)
-endif()
